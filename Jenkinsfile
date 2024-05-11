@@ -14,6 +14,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo "Deploy Application"
+                sh './fetchJokes.sh'
             }
         }
     }
